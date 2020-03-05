@@ -5,9 +5,9 @@ require 'pry'
 
 def reverse_each_word(sentence)
   
-  reversed_word = []
- sentence.split.each {|word| reversed_word << word.reverse }
- reversed_word.join(" ")
+
+ sentence.split.collect {|word| word.reverse.join(" ") }
+ 
 end
 
   
