@@ -5,8 +5,9 @@ require 'pry'
 
 def reverse_each_word(sentence)
   binding.pry 
- sentence.split.each {|word| word.reverse }
- 
+  reversed_word = []
+ sentence.split.each {|word| reversed_word << word.reverse }
+ reversed_word
 end
 
   
